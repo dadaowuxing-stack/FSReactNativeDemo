@@ -1,0 +1,6 @@
+module Pods_FSReactNativeDamo {
+  umbrella header "Pods-FSReactNativeDamo-umbrella.h"
+
+  export *
+  module * { export * }
+}
