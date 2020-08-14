@@ -71,17 +71,32 @@ const renderRightNavigationSection = () => {
 
 const DATA = [
   {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
     title: '商家信息一',
   },
   {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28bb',
     title: '商家信息二',
   },
   {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28bc',
     title: '商家信息三',
+  },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28bd',
+    title: '商家信息四',
+  },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28be',
+    title: '商家信息五',
+  },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28bf',
+    title: '商家信息六',
   },
 ];
 
-renderItem = ({ item }) => {
+const renderItem = ({item}: any) => {
   return (
     <TouchableOpacity activeOpacity={0.8} onPress={goService}>
       <View style={styles.storeInfoView}>
@@ -150,7 +165,7 @@ const App = () => {
           <FlatList
           data={DATA}
           renderItem={renderItem}
-          keyExtractor={item => item.title}
+          keyExtractor={item => item.id}
       />
         </View>
       </SafeAreaView>
